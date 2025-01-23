@@ -12,6 +12,7 @@
   <body>
     <header>
         <h1><a href="{% url 'home' %}">Django blog</a></h1>
+        <a href="{% url 'post_new' %}">+ New Blog Post</a>
     </header>
       {% if user.is_authenticated %}
         <p>Hi {{user.username }}!</p>
